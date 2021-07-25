@@ -1,0 +1,250 @@
+/* Navbar */
+.main-nav {
+  max-width: 376px;
+  height: 250px;
+  z-index: 2;
+}
+
+.nav {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Navbar Left */
+.nav-list {
+}
+
+.nav-list ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style: none;
+}
+
+.nav-list ul li {
+  max-height: 50%;
+  padding: 0.3rem 0;
+  font-size: 1.2em;
+  font-weight: bold;
+  border-bottom: 1px solid var(--gray-color);
+}
+
+.nav-list ul li:hover {
+  color: var(--primary-color-dark);
+}
+
+.nav-list ul li a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Navbar Right */
+.nav-logo {
+  display: flex;
+  align-items: center;
+  max-height: 49%;
+}
+
+.nav-logo h2 a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+.nav-logo h2 a span:hover {
+  color: var(--primary-color-dark);
+}
+
+.nav-logo img {
+  width: 50px;
+  height: 50px;
+}
+
+/* Hero */
+header {
+  background: url("../images/hero.jpeg") no-repeat center center/cover;
+  width: 376px;
+  max-width: 376px;
+  height: 100%;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.65);
+}
+
+/* Hero Right */
+.hero .hero-right img {
+  display: none;
+}
+
+/* Hero Left */
+.hero .hero-left {
+  align-self: center;
+}
+
+.hero .hero-left h1 {
+  font-size: 3em;
+  line-height: 1.2em;
+  padding-top: 4.5em;
+  padding-left: 0.5em;
+  color: var(--light-gray);
+}
+
+.hero .hero-left .sep-line {
+  margin-left: 2em;
+}
+
+.hero .hero-left h1 span {
+  font-size: 50%;
+  font-weight: lighter;
+  color: var(--primary-color);
+}
+
+.hero .hero-left p {
+  margin: 2.5em 2em;
+  color: var(--white-color);
+}
+
+.hero .hero-left a {
+  margin: 0 0.7rem 0 1em;
+}
+
+.btn-primary {
+  padding: 0.69em 1.5em;
+  text-decoration: none;
+  background: var(--primary-color);
+  color: var(--black-color);
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 1.1em;
+  outline: none;
+}
+
+.btn-primary:hover {
+  background: var(--primary-color-dark);
+  color: var(--white-color);
+}
+
+.btn-light {
+  padding: 0.5em 1em;
+  text-decoration: none;
+  background: transparent;
+  color: var(--white-color);
+  border: 3px solid #fff;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 1.1em;
+  outline: none;
+}
+
+.btn-light:hover {
+  background: var(--white-color);
+  color: var(--black-color);
+}
+
+/* Section One  */
+.sec1 {
+  width: 376px;
+  max-width: 376px;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Section One Right */
+.sec1-right p {
+  width: 370px;
+  height: 80%;
+  margin-bottom: 2.9rem;
+}
+
+/* Section One Left */
+.sec1-left {
+  width: 370px;
+  height: 29%;
+}
+
+.sec1-left h1 {
+  font-size: 2em;
+  font-weight: bolder;
+  line-height: 1em;
+  text-shadow: 4px 4px 10px var(--primary-color);
+  color: var(--black-color);
+}
+
+.sec1-left h1 span {
+  font-size: 60%;
+  color: var(--primary-color);
+  text-shadow: none;
+}
+
+.sec1-left p {
+  font-size: 1em;
+  font-style: italic;
+  line-height: 1.2em;
+  color: var(--gray-color);
+}
+
+/* Section Two */
+.sec2 {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  margin-top: 1em;
+  height: 33%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  /* padding: 0 0 1em 1em; */
+  color: var(--light-gray);
+  position: relative;
+  z-index: 1;
+}
+
+.box h3 {
+  font-size: 1.4em;
+}
+
+.box::before {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.65);
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.sec2 .box1 {
+  background: url("../images/showcase1-a.jpeg") no-repeat center center/cover;
+  width: 100%;
+  height: inherit;
+}
+
+.sec2 .box2 {
+  background: url("../images/showcase1-b.jpeg") no-repeat center center/cover;
+  width: 100%;
+  height: inherit;
+}
+
+.sec2 .box3 {
+  background: url("../images/showcase1-c.jpeg") no-repeat center center/cover;
+  width: 100%;
+  height: inherit;
+}

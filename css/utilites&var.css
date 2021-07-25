@@ -1,0 +1,99 @@
+
+/* Variables */
+:root {
+  --max-width: 1900px;
+  --primary-color: rgb(243, 203, 8);
+  --primary-color-dark:rgb(187, 157, 9);
+  --secondary-color: rgb(44, 44, 44);
+  --black-color: #333;
+  --white-color: #fff;
+  --gray-color: rgb(179, 179, 179);
+  --light-gray: #f6f6f6;
+}
+
+/* CSS Resets */
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Roboto', sans-serif;
+}  
+
+::selection {
+  color: var(--black-color);
+  background: var(--primary-color);
+}
+
+html {
+  max-width: var(--max-width);
+  margin: 0 auto;
+}  
+
+/* Utilities Classes */
+.bg-dark {
+  background-color: var(--black-color);
+  color: var(--white-color);
+}
+
+.bg-light {
+    background-color: var(--light-gray);
+    color: var(--black-color);
+}
+
+.btn-primary {
+  padding: 0.69em 2.5em;
+  text-decoration: none;
+  background: var(--primary-color);
+  color: var(--black-color);
+  border-radius: 6px;
+  font-weight:  bold;
+  font-size: 1.1em;
+  outline: none;
+
+}
+
+.btn-primary:hover {
+  background: var(--primary-color-dark);
+  color: var(--white-color);
+}
+
+.btn-light {
+  padding: 0.5em 2em;
+  text-decoration: none;
+  background: transparent;
+  color: var(--white-color);
+  border: 3px solid #fff;
+  border-radius: 6px;
+  font-weight:  bold;
+  font-size: 1.1em;
+  outline: none;
+}
+
+.btn-light:hover {
+  background: var(--white-color);
+  color: var(--black-color)
+}
+
+.btn-blog {
+  text-decoration: none;
+  color: var(--black-color);
+  border-bottom: 2px solid var(--black-color);
+}
+
+.btn-blog:hover {
+  color: var(--primary-color-dark);
+  border-bottom: 2px solid var(--primary-color-dark);
+}
+
+.sep-line {
+  width: 7em;
+  height: 3px;
+  margin: 1.4em 0;
+  background-color: var(--primary-color);
+}
+
+.primary-color {
+  color: var(--primary-color);
+  font-size: 1.2em;
+  line-height: 1.3em;
+}
